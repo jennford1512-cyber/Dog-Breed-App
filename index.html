@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dog Breed App</title>
+
+    <!-- Connects the CSS file to the HTML -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Connects the JavaScript file to the HTML -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>🐶 Find a Dog Breed 🐶</h1>
+
+    <!-- Your dog breed form goes here -->
+
+    <form id="dog-form">
+        <label for="breedName">Breed Name:</label>
+        <input type="text" id="breedName" name="breedName" placeholder="Enter breed name">
+
+        <label for="temperament">Temperament:</label>
+        <select id="temperament" name="temperament">
+            <option value="">-- Select a Temperament --</option>
+            <option value="Playful">Playful</option>
+            <option value="Friendly">Friendly</option>
+            <option value="Loyal">Loyal</option>
+            <option value="Energetic">Energetic</option>
+            <option value="Intelligent">Intelligent</option>
+            <option value="Protective">Protective</option>
+            <option value="Affectionate">Affectionate</option>
+        </select>
+
+        <button type="submit">Find Dogs</button>
+    </form>
+
+    <!-- JavaScript will display dog cards here -->
+    <section id="dog-list"></section>
+
+</body>
+
+</html>
